@@ -64,9 +64,9 @@ export default function LandingPage({ ...rest }) {
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem xs={12} sm={6} md={6}>
-              <h1 className={classes.title}>{`Science navigation made simple`}</h1>
+              <h1 className={classes.title}>{`Nokio - for easy book keeping`}</h1>
               <h4>
-                At Sciple we use machine and human intelligence to combine disparate sources of information and knowledge into searchable graphs.
+                Nokio we offer a book keeping application for small businesses.
                 {/* Every landing page needs a small description after the big bold
                 title, that{"'"}s why we added this text here. Add here all the
                 information that can make you or your product create the first
@@ -89,11 +89,11 @@ export default function LandingPage({ ...rest }) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <SectionProduct />
-          <SectionInterested />
-          <SectionPricing />
+          {/* <SectionInterested />
+          <SectionPricing /> */}
           <SectionTeam />
           <SectionServices />
-          <SectionTestimonials />
+          {/* <SectionTestimonials /> */}
           {/* <SectionNewsletter /> */}
           <div id="my_ref"></div>
           <SectionWork />

@@ -44,7 +44,7 @@ export default function Footer(props) {
                   target="_blank"
                   className={classes.block}
                 >
-                  Sciple AB
+                  be Lean Solutions AB
                 </a>
               </ListItem>
               <ListItem className={classes.inlineBlock}>
@@ -52,20 +52,20 @@ export default function Footer(props) {
                   target="_blank"
                   className={classes.block}
                 >
-                  <span>Org.no: 559294-5496</span>
+                  <span>Org.no: 556997-9445</span>
                   <br/>
-                  <span>VAT: SE559294549601</span>
+                  <span>VAT: SE556997944501</span>
                 </a>
               </ListItem>
               <ListItem className={classes.inlineBlock}>
                 <a
                   target="_blank"
                   className={classes.block}
-                  href="mailto:info@sciple.ai"
+                  href="mailto:info@belean.se"
                 >
                   <span>Phone: +46 (0)73 6488916</span>
                   <br/>
-                  <span>Email: info@sciple.ai</span>
+                  <span>Email: info@belean.se</span>
                 </a>
               </ListItem>
               <ListItem className={classes.inlineBlock}>
@@ -88,7 +88,7 @@ export default function Footer(props) {
             </List>
           </div>
           <div className={classes.right}>
-            &copy; {1900 + new Date().getYear()} made by Sciple
+            &copy; {1900 + new Date().getYear()} made by be Lean
           </div>
         </div>
         <div className={classes.clearFix} />

@@ -18,10 +18,10 @@ import teamStyle from "assets/jss/material-kit-pro-react/views/aboutUsSections/t
 //import FaceChristian from "assets/img/faces/christian.jpg";
 //import FaceKendall from "assets/img/faces/kendall.jpg";
 //import FaceAvatar from "assets/img/faces/avatar.jpg";
-import FaceRajiv from "assets/img/faces/rajiv3.png";
+//import FaceRajiv from "assets/img/faces/rajiv3.png";
 import FaceMikael from "assets/img/faces/mikael_backlund2.jpg";
 import FaceMathias from "assets/img/faces/mathias.jpg";
-import FacePremthip from "assets/img/faces/premthip.jpeg";
+//import FacePremthip from "assets/img/faces/premthip.jpeg";
 
 const useStyles = makeStyles(teamStyle);
 
@@ -58,27 +58,6 @@ export default function SectionTeam() {
         </GridItem>
       </GridContainer>
       <GridContainer>
-        <GridItem md={3} sm={3}>
-          <Card profile plain>
-            <CardAvatar profile plain>
-              <a href="#pablo">
-                <img src={FaceRajiv} alt="profile-pic" className={classes.img} />
-              </a>
-            </CardAvatar>
-            <CardBody plain>
-              <h4 className={classes.cardTitle}>Rajiv Harimoorthy</h4>
-              <h6 className={classes.textMuted}>Co-Founder</h6>
-              <p className={classes.cardDescription}>
-                A self-proclaimed Chef-de-cuisine he can sometimes dish out good food. With an incredible appetite for sleep, he tends to dream big. He is deeply interested in the transformative power of science and technology to drive Sciple forward and up.
-              </p>
-            </CardBody>
-            <CardFooter className={classes.justifyContent}>
-              <Button href="https://www.linkedin.com/in/rajivharimoorthy/" justIcon simple color="linkedin">
-                <i className="fab fa-linkedin-in" />
-              </Button>
-            </CardFooter>
-          </Card>
-        </GridItem>
         <GridItem md={3} sm={3}>
           <Card profile plain>
             <CardAvatar profile plain>
@@ -134,34 +113,6 @@ export default function SectionTeam() {
                 <i className="fab fa-dribbble" />
               </Button>
             </CardFooter> */}
-          </Card>
-        </GridItem>
-        <GridItem md={3} sm={3}>
-          <Card profile plain>
-            <CardAvatar profile plain>
-              <a href="#pablo">
-                <img
-                  src={FacePremthip}
-                  alt="profile-pic"
-                  className={classes.img}
-                />
-              </a>
-            </CardAvatar>
-            <CardBody plain>
-              <h4 className={classes.cardTitle}>Premthip Yaowapatsiri</h4>
-              <h6 className={classes.textMuted}>UX / UI</h6>
-              <p className={classes.cardDescription}>
-                An UX designer by birth she can sketch out designs to enable an awesome user experience. Having previously worked closely with developers at JPL/NASA she intricately understands the user requirements and always abides by the philosophy of {"'"}users first{"'"}.
-              </p>
-            </CardBody>
-            {/*<CardFooter className={classes.justifyContent}>
-              <Button href="#pablo" justIcon simple color="facebook">
-                <i className="fab fa-facebook" />
-              </Button>
-              <Button href="#pablo" justIcon simple color="dribbble">
-                <i className="fab fa-dribbble" />
-              </Button>
-          </CardFooter>*/}
           </Card>
         </GridItem>
       </GridContainer>

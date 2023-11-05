@@ -20,9 +20,22 @@ export default function SectionProduct() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={8} md={8}>
-          <h2 className={classes.title}>Sciple Maps</h2>
+          <h2 className={classes.title}>Nokio</h2>
           <h5 className={classes.description}>
-            Welcome to the world of exploration, but with knowledge this time! Sciple Maps enables you to keep track and stay updated with the most relevant information within your specific domain without a hassle. It takes you through a sea of knowledge showing entities and relationships within your chosen domain letting you visualize what you need and removing the clutter around. Come and enjoy the ride!
+            We started to develop our own application after the fact that Bokio
+            very shamelessly increased the price of Bokio free, which they promised
+            would be free forever. To me, with my 2 sleeping businesses SEK 349 per
+            month and company is too much.
+
+            Nokio will not be the most feature rich of all book keeping applications
+            and richer businesses would be better off using a paid subscription.
+            However, Nokio will always be free since it is Open Source and with a
+            GPL3 license. Hence, anyone can download the code and run it for
+            themselves for free but if any additions to the code is done it will belong
+            to the OpenSource community and be shared by all.
+
+            Nokio is born in the cloud and what it lacks in features it makes up by
+            being heavily tested and documented and therefore avoid unnecessary bugs.
           </h5>
         </GridItem>
       </GridContainer>
@@ -30,9 +43,9 @@ export default function SectionProduct() {
         <GridContainer>
           <GridItem xs={12} sm={4} md={4}>
             <InfoArea
-              title="Build specialized knowledge graphs"
+              title="Keep your financial books in shape for free"
               //description="Find information that you didn't knew existed. No more anticipating what others have written, to find what you are looking for"
-              description="Build a knowledge graph automatically for your domain with documents of your choice. Our state of the art deep learning AI models extract what is important in the text and creates a curated knowledge graph for everyone to use. Build your knowledge, share it with your colleagues, enrich it and store it for later use."
+              description="Keep your financial books in shape"
               icon={Web}
               iconColor="info"
               vertical
@@ -40,10 +53,9 @@ export default function SectionProduct() {
           </GridItem>
           <GridItem xs={12} sm={4} md={4}>
             <InfoArea
-              title="Connect the dots"
-              description="Every piece of information and knowledge is inherently connected. But they tend to live in silos, thereby losing key relationship information between entities. We make it easier, as we say, by connecting the dots.
+              title="Create or import your transactions"
+              description="Create or import your transactions"
               
-              With foundation in the articles we process we build a knowledge base where all knowledge is linked to other knowledge in an infinite network of information."
               icon={Share}
               iconColor="success"
               vertical
@@ -51,11 +63,9 @@ export default function SectionProduct() {
           </GridItem>
           <GridItem xs={12} sm={4} md={4}>
             <InfoArea
-              title="Build and share knowledge"
+              title="Thoroughly tested and forever scalable"
               //description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              description="It's never been easier to get information. Just that it is too much. Sciple Maps will enable sharing knowledge easier whether be it among a group of private individuals or a multinational company with thousands of employees. We've got it covered for you. 
-              
-              Our customers typically build knowledge and share it with colleagues and others. When finished the work can be saved and retrieved at a later stage."
+              description="Thoroughly tested and forever scalable"
               icon={BubbleChart}
               iconColor="danger"
               vertical

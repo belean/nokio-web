@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 import image from "assets/img/bg7.jpg";
-import scipleLogo from "assets/img/faces/sciple_logo.png";
+import beLeanLogo from "assets/img/faces/belean_Logotype.png";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.js";
 import pricingStyle from "assets/jss/material-kit-pro-react/views/pricingStyle.js";
 // nodejs library that concatenates classes
@@ -50,7 +50,7 @@ export default function LandingPage({ ...rest }) {
     <div>
       <Header
         color="transparent"
-        brand={<img src={scipleLogo} alt="Sciple-pic" className={classes.img} />}
+        brand={<img src={beLeanLogo} alt="beLeanLogo-pic" className={classes.img} />}
         links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
         changeColorOnScroll={{

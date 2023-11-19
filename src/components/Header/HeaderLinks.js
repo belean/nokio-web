@@ -143,7 +143,7 @@ export default function HeaderLinks(props) {
       </ListItem>*/}
       <ListItem className={classes.listItem}>
         <Button
-          href="https://maps.sciple.ai"
+          href="https://demo.nokio.org"
           className={classes.navLink}
           //nClick={e => e.preventDefault()}
           color="transparent"

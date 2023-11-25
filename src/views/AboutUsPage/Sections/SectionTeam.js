@@ -57,7 +57,7 @@ export default function SectionTeam() {
           </div> */}
         </GridItem>
       </GridContainer>
-      <GridContainer>
+      <GridContainer justify="center">
         <GridItem md={3} sm={3}>
           <Card profile plain>
             <CardAvatar profile plain>

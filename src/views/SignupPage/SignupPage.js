@@ -31,7 +31,7 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import signupPageStyle from "assets/jss/material-kit-pro-react/views/signupPageStyle.js";
 
 import image from "assets/img/bg7.jpg";
-import scipleLogo from "assets/img/faces/sciple_logo.png";
+import scipleLogo from "assets/img/logos/sciple_logo.png";
 import termsofService from "assets/documents/Terms of Service.pdf";
 
 import { Auth } from 'aws-amplify';

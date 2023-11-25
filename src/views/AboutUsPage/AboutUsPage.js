@@ -24,7 +24,7 @@ import SectionContact from "views/AboutUsPage/Sections/SectionContact.js";
 
 import aboutUsStyle from "assets/jss/material-kit-pro-react/views/aboutUsStyle.js";
 import image from "assets/img/bg9.jpg"
-import scipleLogo from "assets/img/faces/sciple_logo.png";
+import scipleLogo from "assets/img/logos/sciple_logo.png";
 
 const useStyles = makeStyles(aboutUsStyle);
 

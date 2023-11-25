@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 import image from "assets/img/bg7.jpg";
-import beLeanLogo from "assets/img/faces/belean_Logotype.png";
+import beLeanLogo from "assets/img/logos/belean_logo.png";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.js";
 import pricingStyle from "assets/jss/material-kit-pro-react/views/pricingStyle.js";
 // nodejs library that concatenates classes

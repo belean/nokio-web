@@ -1,4 +1,31 @@
 {
+  "master": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-website-master-143104-authRole",
+      "UnauthRoleArn": "arn:aws:iam::759562942437:role/amplify-website-master-143104-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::759562942437:role/amplify-website-master-143104-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-website-master-143104-deployment",
+      "UnauthRoleName": "amplify-website-master-143104-unauthRole",
+      "StackName": "amplify-website-master-143104",
+      "StackId": "arn:aws:cloudformation:eu-west-1:759562942437:stack/amplify-website-master-143104/4560cad0-86e8-11ee-8449-0aa49a7b03ff",
+      "AmplifyAppId": "dipnm9dskg0l0"
+    },
+    "categories": {
+      "function": {
+        "sendEmail": {
+          "deploymentBucketName": "amplify-website-master-143104-deployment",
+          "s3Key": "amplify-builds/sendEmail-51344e33474943483570-build.zip"
+        }
+      },
+      "api": {
+        "apiSendEmail": {}
+      },
+      "hosting": {
+        "S3AndCloudFront": {}
+      }
+    }
+  },
   "prod": {
     "awscloudformation": {
       "AuthRoleName": "amplify-website-prod-144019-authRole",

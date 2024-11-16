@@ -93,7 +93,7 @@ export default function SectionWork() {
                 />
               </GridItem>
               <CustomInput
-                labelText="Your Message"
+                labelText="Your nice Message"
                 id="message"
                 formControlProps={{
                   fullWidth: true,

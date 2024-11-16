@@ -1,7 +1,7 @@
 import json
 import boto3
 from botocore.exceptions import ClientError
-from ..config import Config
+from config import Config
 
 
 class Email:

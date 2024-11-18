@@ -32,8 +32,8 @@ export default function SectionWork() {
   async function postData() {
     //Take input from form data and package and send it to a AWS Lambda Rest endpoint
     // AWS Credentials
-    const apiName = "apiSendEmail";
-    const path = "/email";
+    const apiName = "SendEmail-master-API";
+    const path = "/sendEmail-master";
     const data = await API.post(
       apiName,
       path,

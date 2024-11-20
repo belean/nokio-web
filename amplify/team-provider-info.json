@@ -19,7 +19,6 @@
         }
       },
       "api": {
-        "SendEmail-master-API": {},
         "apiSendEmail": {}
       },
       "hosting": {

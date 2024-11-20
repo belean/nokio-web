@@ -158,6 +158,7 @@ logs/
 app.db
 *.db
 
+bak/
 *.bak
 .vscode/
 data/document_parses/

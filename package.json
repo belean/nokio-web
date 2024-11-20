@@ -4,12 +4,14 @@
   "private": true,
   "dependencies": {
     "@aws-amplify/ui-react": "^1.2.0",
+    "@babel/core": "^7.26.0",
     "@material-ui/core": "4.11.4",
     "@material-ui/icons": "4.11.2",
     "animate.css": "4.1.1",
     "aws-amplify": "^4.0.2",
     "aws-amplify-react": "^5.0.0",
     "axios": "^0.21.1",
+    "caniuse-lite": "1.0.30001632",
     "classnames": "2.3.1",
     "history": "5.0.0",
     "moment": "2.29.1",
@@ -46,7 +48,8 @@
   },
   "devDependencies": {
     "gulp": "4.0.2",
-    "gulp-append-prepend": "1.0.9"
+    "gulp-append-prepend": "1.0.9",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "optionalDependencies": {
     "@types/googlemaps": "3.39.6",
@@ -61,5 +64,8 @@
       "not op_mini all"
     ],
     "development": []
+  },
+  "resolutions": {
+    "@babel/core": "^7.16.0"
   }
 }

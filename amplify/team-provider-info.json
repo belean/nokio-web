@@ -15,14 +15,19 @@
       "function": {
         "sendEmail": {
           "deploymentBucketName": "amplify-website-master-143104-deployment",
-          "s3Key": "amplify-builds/sendEmail-51344e33474943483570-build.zip"
+          "s3Key": "amplify-builds/sendEmail-30597147386764436d50-build.zip"
         }
       },
       "api": {
+        "SendEmail-master-API": {},
         "apiSendEmail": {}
       },
       "hosting": {
         "S3AndCloudFront": {}
+      },
+      "auth": {
+        "nokioweb": {},
+        "nokioweb16011314": {}
       }
     }
   },

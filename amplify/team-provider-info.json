@@ -31,5 +31,32 @@
         "WebsiteNokioAuth": {}
       }
     }
+  },
+  "master": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-websitenokio-master-e5e6e-authRole",
+      "UnauthRoleArn": "arn:aws:iam::759562942437:role/amplify-websitenokio-master-e5e6e-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::759562942437:role/amplify-websitenokio-master-e5e6e-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-websitenokio-master-e5e6e-deployment",
+      "UnauthRoleName": "amplify-websitenokio-master-e5e6e-unauthRole",
+      "StackName": "amplify-websitenokio-master-e5e6e",
+      "StackId": "arn:aws:cloudformation:eu-west-1:759562942437:stack/amplify-websitenokio-master-e5e6e/28c84c80-ab55-11ef-a14e-062cf2a285cf",
+      "AmplifyAppId": "d39yz4ob3h1dh8"
+    },
+    "categories": {
+      "auth": {
+        "WebsiteNokioAuth": {}
+      },
+      "function": {
+        "sendemail2": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d39yz4ob3h1dh8",
+          "type": "manual"
+        }
+      }
+    }
   }
 }

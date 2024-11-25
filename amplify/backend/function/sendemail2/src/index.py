@@ -5,8 +5,6 @@ from send_mail import Email
 def handler(event, context):
     print("received event:")
     print(event)
-
-    # User code
     send_mail = Email(event.get("body"))
     status = send_mail.run()
 

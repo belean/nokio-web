@@ -1,16 +1,15 @@
 export type AmplifyDependentResourcesAttributes = {
   "api": {
-    "apiSendEmail": {
+    "apiSendEmail2": {
       "ApiId": "string",
       "ApiName": "string",
       "RootUrl": "string"
     }
   },
   "auth": {
-    "nokioweb16011314": {
+    "WebsiteNokioAuth": {
       "AppClientID": "string",
       "AppClientIDWeb": "string",
-      "CreatedSNSRole": "string",
       "IdentityPoolId": "string",
       "IdentityPoolName": "string",
       "UserPoolArn": "string",
@@ -19,24 +18,12 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "function": {
-    "sendEmail": {
+    "sendemail2": {
       "Arn": "string",
       "LambdaExecutionRole": "string",
       "LambdaExecutionRoleArn": "string",
       "Name": "string",
       "Region": "string"
-    }
-  },
-  "hosting": {
-    "S3AndCloudFront": {
-      "CloudFrontDistributionID": "string",
-      "CloudFrontDomainName": "string",
-      "CloudFrontOriginAccessIdentity": "string",
-      "CloudFrontSecureURL": "string",
-      "HostingBucketName": "string",
-      "Region": "string",
-      "S3BucketSecureURL": "string",
-      "WebsiteURL": "string"
     }
   }
 }

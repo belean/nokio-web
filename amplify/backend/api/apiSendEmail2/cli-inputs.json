@@ -1,9 +1,9 @@
 {
   "version": 1,
   "paths": {
-    "/email": {
-      "name": "/email",
-      "lambdaFunction": "sendEmail",
+    "/sendEmail-prod": {
+      "name": "/sendEmail-prod",
+      "lambdaFunction": "sendemail2",
       "permissions": {
         "setting": "open"
       }

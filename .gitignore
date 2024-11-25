@@ -165,6 +165,8 @@ data/document_parses/
 *.log.*
 packages.tar.gz
 
+amplify.OLD/
+
 #amplify-do-not-edit-begin
 amplify/\#current-cloud-backend
 amplify/.config/local-*

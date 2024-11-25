@@ -19,7 +19,7 @@ class Email:
         # print(f"Body== {self.body}")
         # The email body for recipients with non-HTML email clients.
         BODY_TEXT = (
-            "Nokio Contact us\r\n"
+            "Sciple Contact us\r\n"
             f"{self.body.get('email')} wrote: {self.body.get('message')}\r\n"
             "This email was sent with Amazon SES using the "
             "AWS SDK for Python (Boto)."
@@ -29,7 +29,7 @@ class Email:
         BODY_HTML = f"""<html>
         <head></head>
         <body>
-            <h1>Nokio Contact Us</h1>
+            <h1>Sciple Contact Us</h1>
             <p>{self.body.get('email')} wrote:</p>
             <br/>
             <p>{self.body.get('message')}</p>
@@ -87,9 +87,9 @@ class Email:
 if __name__ == "__main__":
     test = {
         "body": {
-            "email": "info@belean.se",
+            "email": "mikael@sciple.ai",
             "name": "Mikael Backlund",
-            "message": "be Lean/ Nokio FTW",
+            "message": "Sciple FTW",
         }
     }
     email = Email(test)

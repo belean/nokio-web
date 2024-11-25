@@ -1,6 +1,6 @@
 {
   "api": {
-    "apiSendEmail": {
+    "apiSendEmail2": {
       "dependsOn": [
         {
           "attributes": [
@@ -8,7 +8,7 @@
             "Arn"
           ],
           "category": "function",
-          "resourceName": "sendEmail"
+          "resourceName": "sendemail2"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -16,60 +16,58 @@
     }
   },
   "auth": {
-    "nokioweb16011314": {
+    "WebsiteNokioAuth": {
       "customAuth": false,
       "dependsOn": [],
-      "frontendAuthConfig": {
-        "mfaConfiguration": "OFF",
-        "mfaTypes": [
-          "SMS"
-        ],
-        "passwordProtectionSettings": {
-          "passwordPolicyCharacters": [],
-          "passwordPolicyMinLength": 8
-        },
-        "signupAttributes": [
-          "EMAIL"
-        ],
-        "socialProviders": [],
-        "usernameAttributes": [
-          "EMAIL"
-        ],
-        "verificationMechanisms": [
-          "EMAIL"
-        ]
-      },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
     }
   },
   "function": {
-    "sendEmail": {
+    "sendemail2": {
       "build": true,
+      "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
   },
   "hosting": {
-    "S3AndCloudFront": {
+    "amplifyhosting": {
       "providerPlugin": "awscloudformation",
-      "service": "S3AndCloudFront"
+      "service": "amplifyhosting",
+      "type": "manual"
     }
   },
   "parameters": {
-    "AMPLIFY_function_sendEmail_deploymentBucketName": {
+    "AMPLIFY_function_sendemail2_deploymentBucketName": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "sendEmail"
+          "resourceName": "sendemail2"
         }
       ]
     },
-    "AMPLIFY_function_sendEmail_s3Key": {
+    "AMPLIFY_function_sendemail2_s3Key": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "sendEmail"
+          "resourceName": "sendemail2"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_appId": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
+        }
+      ]
+    },
+    "AMPLIFY_hosting_amplifyhosting_type": {
+      "usedBy": [
+        {
+          "category": "hosting",
+          "resourceName": "amplifyhosting"
         }
       ]
     }

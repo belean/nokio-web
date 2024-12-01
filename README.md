@@ -1,4 +1,120 @@
-# Nokio web
+# Nokio web site
+
+```yaml
+by: Mikael Backlund
+at: 2024-12-01
+```
+
+Nokio web site is a landing page for Nokio. It contains information, offers and a contact form for sending a message.
+
+The landing page is a react web app and built with Creative Tim package built on Material-UI. It uses Amplify to simplify the serverless instrumenting in AWS.
+
+It use the following Amplify environment, amplify user and configlevel
+
+```json
+{
+  "master": {
+    "configLevel": "project",
+    "useProfile": true,
+    "profileName": "amplify-nokio"
+  }
+}
+```
+
+The code is stored in GitHub with the following status: (as seen from Macbook Pro)
+
+```
+❯ gh auth status
+github.com
+  ✓ Logged in to github.com account scipleai (keyring)
+  - Active account: true
+  - Git operations protocol: https
+  - Token: gho_************************************
+  - Token scopes: 'gist', 'read:org', 'repo', 'workflow'
+
+  ✓ Logged in to github.com account belean (keyring)
+  - Active account: false
+  - Git operations protocol: https
+  - Token: gho_************************************
+  - Token scopes: 'gist', 'read:org', 'repo', 'workflow'
+```
+
+To develop or fix bugs follow this list
+
+1. Clone the Github repository
+1. Pull the amplify project from AWS:Amplify
+   ![AWS Console login](./public/AWSConsoleLogin.png "AWS Login")
+   and connect your app to this backend environment using the Amplify CLI by running the following command from your project root folder.
+
+   ```bash
+   amplify pull --appId dipnm9dskg0l0 --envName master
+   ```
+
+1. Initialize the amplify project with
+
+   ```bash
+   amplify configure  # Configure the CLI to work with your AWS profile
+   #amplify init  # Initialize a new Amplify project
+   ```
+
+1. Amplify status should show this
+
+```bash
+ ❯ amplify status
+
+  Current Environment: master
+
+┌──────────┬──────────────────┬───────────┬───────────────────┐
+│ Category │ Resource name    │ Operation │ Provider plugin   │
+├──────────┼──────────────────┼───────────┼───────────────────┤
+│ Api      │ apiSendEmail2    │ No Change │ awscloudformation │
+├──────────┼──────────────────┼───────────┼───────────────────┤
+│ Auth     │ WebsiteNokioAuth │ No Change │ awscloudformation │
+├──────────┼──────────────────┼───────────┼───────────────────┤
+│ Function │ sendemail2       │ No Change │ awscloudformation │
+├──────────┼──────────────────┼───────────┼───────────────────┤
+│ Hosting  │ amplifyhosting   │ No Change │ awscloudformation │
+└──────────┴──────────────────┴───────────┴───────────────────┘
+
+REST API endpoint: https://jbti02jtw9.execute-api.eu-west-1.amazonaws.com/master
+
+Amplify hosting urls:
+┌──────────────┬─────────────────────────────────────────────┐
+│ FrontEnd Env │ Domain                                      │
+├──────────────┼─────────────────────────────────────────────┤
+│ master       │ https://master.dipnm9dskg0l0.amplifyapp.com │
+│              ├─────────────────────────────────────────────┤
+│              │ https://nokio.org                           │
+│              ├─────────────────────────────────────────────┤
+│              │ https://www.nokio.org                       │
+└──────────────┴─────────────────────────────────────────────┘
+```
+
+1. To build a local copy
+
+   ```
+   yarn && yarn run build && serve -s build
+   ```
+
+   **Now, if you go to localhost:3000 you can access the web app**
+
+1. Push to Github to deploy
+
+## AWS Cognito
+
+Sciple web app is using AWS cognito to authorize web users to send messages to gmail. Sciple is using
+
+| Identity pools                                       | User pools                                    |
+| ---------------------------------------------------- | --------------------------------------------- |
+| websitenokio59aa4c71_identitypool_59aa4c71\_\_master | websitenokio59aa4c71_userpool_59aa4c71-master |
+
+## Trouble shooting
+
+1. Make sure to check errors in the web browser development tools
+1. Beware of users and their permission especially since cognito is involved
+   - Trust relationship
+   - Permissions like ses:SendEmail
+1. Check in Cloudwatch if errors (AWS Lambda)
 
 https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/api-gateway-invoking-lambda-example.html
 

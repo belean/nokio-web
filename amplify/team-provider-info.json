@@ -1,59 +1,29 @@
 {
-  "dev": {
+  "master": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-websitenokio-dev-c224b-authRole",
-      "UnauthRoleArn": "arn:aws:iam::759562942437:role/amplify-websitenokio-dev-c224b-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::759562942437:role/amplify-websitenokio-dev-c224b-authRole",
+      "AuthRoleName": "amplify-website-master-143104-authRole",
+      "UnauthRoleArn": "arn:aws:iam::759562942437:role/amplify-website-master-143104-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::759562942437:role/amplify-website-master-143104-authRole",
       "Region": "eu-west-1",
-      "DeploymentBucketName": "amplify-websitenokio-dev-c224b-deployment",
-      "UnauthRoleName": "amplify-websitenokio-dev-c224b-unauthRole",
-      "StackName": "amplify-websitenokio-dev-c224b",
-      "StackId": "arn:aws:cloudformation:eu-west-1:759562942437:stack/amplify-websitenokio-dev-c224b/4c8237f0-ab3a-11ef-8e72-0a8042ba5efd",
-      "AmplifyAppId": "d39yz4ob3h1dh8"
+      "DeploymentBucketName": "amplify-website-master-143104-deployment",
+      "UnauthRoleName": "amplify-website-master-143104-unauthRole",
+      "StackName": "amplify-website-master-143104",
+      "StackId": "arn:aws:cloudformation:eu-west-1:759562942437:stack/amplify-website-master-143104/4560cad0-86e8-11ee-8449-0aa49a7b03ff",
+      "AmplifyAppId": "dipnm9dskg0l0"
     },
     "categories": {
-      "hosting": {
-        "amplifyhosting": {
-          "appId": "d39yz4ob3h1dh8",
-          "type": "manual"
-        }
+      "auth": {
+        "WebsiteNokioAuth": {}
       },
       "function": {
         "sendemail2": {
-          "deploymentBucketName": "amplify-websitenokio-dev-c224b-deployment",
-          "s3Key": "amplify-builds/sendemail2-6b394c4f444c446a4d46-build.zip"
+          "deploymentBucketName": "amplify-website-master-143104-deployment",
+          "s3Key": "amplify-builds/sendemail2-316844465441494f794c-build.zip"
         }
-      },
-      "api": {
-        "apiSendEmail2": {}
-      },
-      "auth": {
-        "WebsiteNokioAuth": {}
-      }
-    }
-  },
-  "master": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-websitenokio-master-e5e6e-authRole",
-      "UnauthRoleArn": "arn:aws:iam::759562942437:role/amplify-websitenokio-master-e5e6e-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::759562942437:role/amplify-websitenokio-master-e5e6e-authRole",
-      "Region": "eu-west-1",
-      "DeploymentBucketName": "amplify-websitenokio-master-e5e6e-deployment",
-      "UnauthRoleName": "amplify-websitenokio-master-e5e6e-unauthRole",
-      "StackName": "amplify-websitenokio-master-e5e6e",
-      "StackId": "arn:aws:cloudformation:eu-west-1:759562942437:stack/amplify-websitenokio-master-e5e6e/28c84c80-ab55-11ef-a14e-062cf2a285cf",
-      "AmplifyAppId": "d39yz4ob3h1dh8"
-    },
-    "categories": {
-      "auth": {
-        "WebsiteNokioAuth": {}
-      },
-      "function": {
-        "sendemail2": {}
       },
       "hosting": {
         "amplifyhosting": {
-          "appId": "d39yz4ob3h1dh8",
+          "appId": "dipnm9dskg0l0",
           "type": "manual"
         }
       }

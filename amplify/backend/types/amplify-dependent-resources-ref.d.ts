@@ -10,6 +10,7 @@ export type AmplifyDependentResourcesAttributes = {
     "WebsiteNokioAuth": {
       "AppClientID": "string",
       "AppClientIDWeb": "string",
+      "CreatedSNSRole": "string",
       "IdentityPoolId": "string",
       "IdentityPoolName": "string",
       "UserPoolArn": "string",

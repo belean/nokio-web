@@ -39,6 +39,22 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_sendemail2_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "sendemail2"
+        }
+      ]
+    },
+    "AMPLIFY_function_sendemail2_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "sendemail2"
+        }
+      ]
+    },
     "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {

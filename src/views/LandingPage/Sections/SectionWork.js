@@ -42,6 +42,7 @@ export default function SectionWork() {
           email: email,
           name: name,
           message: message,
+          reciever: "info@belean.se"
         }
       },
     );

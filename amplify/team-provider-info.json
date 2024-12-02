@@ -1,34 +1,4 @@
 {
-  "master": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-website-master-143104-authRole",
-      "UnauthRoleArn": "arn:aws:iam::759562942437:role/amplify-website-master-143104-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::759562942437:role/amplify-website-master-143104-authRole",
-      "Region": "eu-west-1",
-      "DeploymentBucketName": "amplify-website-master-143104-deployment",
-      "UnauthRoleName": "amplify-website-master-143104-unauthRole",
-      "StackName": "amplify-website-master-143104",
-      "StackId": "arn:aws:cloudformation:eu-west-1:759562942437:stack/amplify-website-master-143104/4560cad0-86e8-11ee-8449-0aa49a7b03ff",
-      "AmplifyAppId": "dipnm9dskg0l0"
-    },
-    "categories": {
-      "auth": {
-        "WebsiteNokioAuth": {}
-      },
-      "function": {
-        "sendemail2": {
-          "deploymentBucketName": "amplify-website-master-143104-deployment",
-          "s3Key": "amplify-builds/sendemail2-316844465441494f794c-build.zip"
-        }
-      },
-      "hosting": {
-        "amplifyhosting": {
-          "appId": "dipnm9dskg0l0",
-          "type": "manual"
-        }
-      }
-    }
-  },
   "dev": {
     "awscloudformation": {
       "AuthRoleName": "amplify-nokioweb-dev-9dd94-authRole",
@@ -49,6 +19,39 @@
         "sendemail2": {
           "deploymentBucketName": "amplify-nokioweb-dev-9dd94-deployment",
           "s3Key": "amplify-builds/sendemail2-4a576d48756d79684368-build.zip"
+        }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dipnm9dskg0l0",
+          "type": "manual"
+        }
+      },
+      "api": {
+        "apiSendEmail2": {}
+      }
+    }
+  },
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nokioweb-prod-cf5a8-authRole",
+      "UnauthRoleArn": "arn:aws:iam::759562942437:role/amplify-nokioweb-prod-cf5a8-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::759562942437:role/amplify-nokioweb-prod-cf5a8-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-nokioweb-prod-cf5a8-deployment",
+      "UnauthRoleName": "amplify-nokioweb-prod-cf5a8-unauthRole",
+      "StackName": "amplify-nokioweb-prod-cf5a8",
+      "StackId": "arn:aws:cloudformation:eu-west-1:759562942437:stack/amplify-nokioweb-prod-cf5a8/705befe0-b08f-11ef-ae11-0abc2d14cdc9",
+      "AmplifyAppId": "dipnm9dskg0l0"
+    },
+    "categories": {
+      "auth": {
+        "WebsiteNokioAuth": {}
+      },
+      "function": {
+        "sendemail2": {
+          "deploymentBucketName": "amplify-nokioweb-prod-cf5a8-deployment",
+          "s3Key": "amplify-builds/sendemail2-2b476e763273426c3855-build.zip"
         }
       },
       "hosting": {

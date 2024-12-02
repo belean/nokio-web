@@ -9,7 +9,7 @@ Nokio web site is a landing page for Nokio. It contains information, offers and 
 
 The landing page is a react web app and built with Creative Tim package built on Material-UI. It uses Amplify to simplify the serverless instrumenting in AWS.
 
-It use the following Amplify environment, amplify user and configlevel
+It use the following Amplify environment, amplify user and configlevel.
 
 ```json
 {
